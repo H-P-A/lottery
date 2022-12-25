@@ -1,0 +1,13 @@
+'user strict';
+
+{
+  const btn = document.getElementById('btn');
+  const result = document.getElementById('result');
+
+  btn.addEventListener('click', () => {
+    const results = ['当選しました！', '残念、ハズレ！', 'もう一度引けるよ！', '補欠当選だよ！'];
+    const n = Math.floor(Math.random() * results.length);
+
+    result.textContent = results[n];
+  });
+}
